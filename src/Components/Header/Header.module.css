@@ -1,0 +1,83 @@
+.containerHeader{
+  width: 100%;
+  height: 13vh;
+  background-color: black;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+}
+
+.logoHeader{
+  height: 10vh;
+  width: 150px;
+}
+
+.logoHeader img{
+  width: 100%;
+  height: 100%;
+}
+
+ h2{
+  color: white;
+  font-size: 30px;
+}
+input{
+  height: 5vh;
+}
+
+@media(max-width:627px){
+  .logoHeader{
+    height: 8vh;
+    width: 90px;
+  }
+  
+  
+  
+   h2{
+    color: white;
+    font-size: 25px;
+  }
+  input{
+    height: 5vh;
+    width: 120px;
+  }
+
+}
+
+@media(max-width:465px){
+  .logoHeader{
+    height: 7vh;
+    width: 60px;
+  }
+  
+  
+  
+   h2{
+    color: white;
+    font-size: 18px;
+  }
+  input{
+    height: 5vh;
+    width: 120px;
+  }
+
+}
+@media(max-width:353px){
+  .logoHeader{
+    height: 5vh;
+    width: 60px;
+  }
+  
+  
+  
+   h2{
+    color: white;
+    font-size: 14px;
+  }
+  input{
+    height: 5vh;
+    width: 90px;
+  }
+
+}

@@ -1,0 +1,111 @@
+*{
+  margin: 0;
+  border: 0;
+  padding: 0;
+}
+
+.wrap{
+margin-top: 30px;
+margin-bottom: -60px;
+
+}
+.cartWrap{
+  
+  width: 500px;
+  height: 250px;
+ perspective: 800;
+ -webkit-perspective: 800;
+}
+
+.cart{
+  width: 500px;
+  height: 250px;
+
+  box-shadow: 0 1px 0 #ddd, 0 2px 0 #ccc, 0 3px 0 #bbb, 0 4px 0 rgb(10, 10, 10), 0 5px 0 #0e0d0d, 0 6px 1px rgba(0,0,0,0.1), 0 0 5px rgba(0,0,0,0.1), 0 1px 3px rgba(0,0,0,0.3), 0 3px 5px rgba(0,0,0,0.2), 0 5px 10px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.2), 0 20px 20px rgba(0,0,0,0.15);
+  position: relative;
+  transform-style: preserve-3d;
+  transition: .7s ease;
+ 
+}
+
+.front,.back{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top:0;
+  left:0;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+.front{
+  overflow: hidden;
+ 
+}
+.front img{
+  width: 100%;
+  height: 100%;
+}
+.back{
+  background-color: rgb(39, 35, 35);
+  transform: rotateY(180deg);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  font-size: 30px;
+  
+}
+.back h3{
+  margin-top: 30px;
+}
+.containerbtn{
+  margin-top: 60px;
+  height: 30px;
+  display: flex;
+  width: 80%;
+  justify-content: space-around;
+}
+.button{
+  width: 80px;
+  height: 30px;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.cartWrap:hover .cart{
+  transform: rotateY(180deg);
+}
+
+@media(max-width:525px){
+
+  .cartWrap{
+  
+    width: 400px;
+    height: 200px;
+ 
+  }
+  
+  .cart{
+    width: 400px;
+    height: 200px;
+  
+  }
+  .back h3{
+    font-size: 25px;
+  }
+}
+@media(max-width:425px){
+
+  .cartWrap{
+  
+    width: 300px;
+    height: 170px;
+ 
+  }
+  
+  .cart{
+    width: 300px;
+    height: 170px;
+  
+  }
+}
